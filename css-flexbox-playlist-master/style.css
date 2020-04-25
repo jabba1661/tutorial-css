@@ -1,15 +1,69 @@
-*{
-    font-family: verdana;
-    margin: 0;
+* {
+  font-family: verdana;
+  margin: 0;
 }
 
-body{
-    background: #eee;
+body {
+  background: #eee;
+  /* background: orange; */
 }
 
-.wrapper{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  background-color: yellow;
+  /* margin: 10px 10px 10px 10px; */
+  /* border: 2px solid black; */
 }
 
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: flex-end;
+  height: 800px;
+}
+
+/* 
+//if not using flex
+.flex-container:after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+.box {
+  height: 100px;
+  flex: 0 0 100px;
+  /* flex <grow> <shink> <basis> */
+  /* flex-basis: 500px; */
+  /* min-width: 500px; */
+  /* flex-grow: 1; */
+  /* flex-grow: 1; */
+  /* float: left; */
+  /* height: 100vh; */
+}
+
+.one {
+  background: red;
+  /* flex-basis: 100px; */
+  /* flex-shrink: 1; */
+  /* flex-grow: 2; */
+}
+
+.two {
+  background: blue;
+  /* flex-basis: 200px; */
+  /* flex-shrink: 2; */
+  /* flex-grow: 3; */
+}
+
+.three {
+  background: green;
+  /* flex-basis: 300px; */
+  /* flex-shrink: 12; */
+  /* flex-grow: 1; */
+}
